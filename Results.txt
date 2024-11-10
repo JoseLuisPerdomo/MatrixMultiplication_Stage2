@@ -1,0 +1,96 @@
+Strassen 50 0.0082371
+Strassen 128 0.311375001
+Strassen 129 0.2761556
+Strassen 256 1.8239599
+Strassen 512 12.9119159
+Strassen 1024 90.303008799
+Strassen 2000 105.5530479
+StrassenT 50 0.0016456
+StrassenT 128 0.0044717
+StrassenT 129 0.0052632
+StrassenT 256 0.0115762
+StrassenT 512 0.0633051
+StrassenT 1024 0.4276304
+StrassenT 2000 2.674193
+StrassenT 5000 42.001925
+StrassenT 8000 119.8572774
+StrassenT 10000 225.0815647
+StrassenT_T 128 0.007388
+StrassenT_T 129 0.0044639
+StrassenT_T 256 0.0064969
+StrassenT_T 512 0.0241828
+StrassenT_T 1024 0.1173543
+StrassenT_T 2000 0.5902826
+StrassenT_T 5000 11.4636808
+StrassenT_T 8000 OutOfMemoryError
+StrassenT_T 10000 OutOfMemoryError
+StrassenT_T_S 50 0.3 0.0139534
+StrassenT_T_S 50 0.4 0.0081107
+StrassenT_T_S 50 0.5 0.0058197
+StrassenT_T_S 50 0.6 0.0068285
+StrassenT_T_S 50 0.7 0.0182719
+StrassenT_T_S 50 0.8 0.0035046
+StrassenT_T_S 50 0.9 0.0025381
+StrassenT_T_S 128 0.3 0.0624558
+StrassenT_T_S 128 0.4 0.0589021
+StrassenT_T_S 128 0.5 0.0695192
+StrassenT_T_S 128 0.6 0.0623323
+StrassenT_T_S 128 0.7 0.0741601
+StrassenT_T_S 128 0.8 0.0684693
+StrassenT_T_S 128 0.9 0.0604276
+StrassenT_T_S 129 0.3 0.000393
+StrassenT_T_S 129 0.4 0.0004112
+StrassenT_T_S 129 0.5 0.000083
+StrassenT_T_S 129 0.6 0.000075
+StrassenT_T_S 129 0.7 0.0000882
+StrassenT_T_S 129 0.8 0.000062
+StrassenT_T_S 129 0.9 0.0000644
+StrassenT_T_S 256 0.3 0.0001991
+StrassenT_T_S 256 0.4 0.0001051
+StrassenT_T_S 256 0.5 0.0002981
+StrassenT_T_S 256 0.6 0.0000841
+StrassenT_T_S 256 0.7 0.0003089
+StrassenT_T_S 256 0.8 0.0001426
+StrassenT_T_S 256 0.9 0.0000707
+StrassenT_T_S 512 0.3 0.0002527
+StrassenT_T_S 512 0.4 0.0005666
+StrassenT_T_S 512 0.5 0.0013065
+StrassenT_T_S 512 0.6 0.0004762
+StrassenT_T_S 512 0.7 0.0002974
+StrassenT_T_S 512 0.8 0.0002804
+StrassenT_T_S 512 0.9 0.000538
+StrassenT_T_S 1024 0.3 0.0005039
+StrassenT_T_S 1024 0.4 0.0004769
+StrassenT_T_S 1024 0.5 0.0004383
+StrassenT_T_S 1024 0.6 0.0003273
+StrassenT_T_S 1024 0.7 0.000305
+StrassenT_T_S 1024 0.8 0.0002796
+StrassenT_T_S 1024 0.9 0.0005389
+StrassenT_T_S 2000 0.3 0.0021703
+StrassenT_T_S 2000 0.4 0.001683
+StrassenT_T_S 2000 0.5 0.0003951
+StrassenT_T_S 2000 0.6 0.0004583
+StrassenT_T_S 2000 0.7 0.0002391
+StrassenT_T_S 2000 0.8 0.0002276
+StrassenT_T_S 2000 0.9 0.0003563
+StrassenT_T_S 5000 0.3 0.0790686
+StrassenT_T_S 5000 0.4 0.0036637
+StrassenT_T_S 5000 0.5 0.0035696
+StrassenT_T_S 5000 0.6 0.0027742
+StrassenT_T_S 5000 0.7 0.0028446
+StrassenT_T_S 5000 0.8 0.0025797
+StrassenT_T_S 5000 0.9 0.0030764
+StrassenT_T_S 8000 0.9 0.033893
+StrassenT_T_S 8000 0.8 0.0478227
+StrassenT_T_S 8000 0.7 0.030892
+StrassenT_T_S 8000 0.6 0.0395265
+StrassenT_T_S 8000 0.5 0.034708
+StrassenT_T_S 8000 0.4 5.761628
+StrassenT_T_S 8000 0.3 OutOfMemoryError
+StrassenT_T_S 10000 0.3 OutOfMemoryError
+StrassenT_T_S 10000 0.4 OutOfMemoryError
+StrassenT_T_S 10000 0.5 OutOfMemoryError
+StrassenT_T_S 10000 0.6 OutOfMemoryError
+StrassenT_T_S 10000 0.7 OutOfMemoryError
+StrassenT_T_S 10000 0.8 OutOfMemoryError
+StrassenT_T_S 10000 0.9 OutOfMemoryErrorStrassenT_T 3000 2.6177228
