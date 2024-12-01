@@ -1,14 +1,20 @@
-package org.ulpgc;
+package org.ulpgc.stage2;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class Strassen {
+public class StrassenT {
+
+    private static final int THRESHOLD = 128;
 
     public int[][] multiply(int[][] A, int[][] B) {
         int n = A.length;
         int[][] R = new int[n][n];
+
+        if (n <= THRESHOLD) {
+            return naiveMultiply(A, B);
+        }
 
         if (n == 1) {
             R[0][0] = A[0][0] * B[0][0];
@@ -52,6 +58,19 @@ public class Strassen {
         return R;
     }
 
+    private int[][] naiveMultiply(int[][] A, int[][] B) {
+        int n = A.length;
+        int[][] C = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < n; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        return C;
+    }
+
     public int[][] sub(int[][] A, int[][] B) {
         int n = A.length;
         int[][] C = new int[n][n];
@@ -92,8 +111,7 @@ public class Strassen {
     }
 
     public static double run(int N) {
-        Strassen s = new Strassen();
-
+        StrassenT s = new StrassenT();
         int[][] A = generateRandomMatrix(N);
         int[][] B = generateRandomMatrix(N);
 
@@ -101,17 +119,18 @@ public class Strassen {
         s.multiply(A, B);
         long endTime = System.nanoTime();
 
-
+        s = null;
+        A = null;
+        B = null;
         return (endTime - startTime) / 1_000_000_000.0;
-
     }
 
     public static void main(String[] args) throws IOException {
-        double[] sizesStrassen = {3000};
+        double[] sizes = {50, 128, 129, 256, 512, 1024, 2000, 5000, 8000, 10000};
         StringBuilder results = new StringBuilder();
-        Strassen s = new Strassen();
+        StrassenT s = new StrassenT();
 
-        for (double size : sizesStrassen) {
+        for (double size : sizes) {
             int N = (int) size;
             int[][] A = generateRandomMatrix(N);
             int[][] B = generateRandomMatrix(N);
@@ -121,12 +140,11 @@ public class Strassen {
             long endTime = System.nanoTime();
             double time = (endTime - startTime) / 1_000_000_000.0;
 
-            results.append("Strassen ").append(N).append(" ").append(time);
+            results.append("StrassenT ").append(N).append(" ").append(time);
         }
 
-        System.out.println(results);
+        saveResultsToFile(results.toString());
     }
-
     private static void saveResultsToFile(String results) throws IOException {
         try (FileWriter writer = new FileWriter("Results.txt", true)) {
             writer.write(results);

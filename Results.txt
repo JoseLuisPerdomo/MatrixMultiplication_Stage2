@@ -93,4 +93,4 @@ StrassenT_T_S 10000 0.5 OutOfMemoryError
 StrassenT_T_S 10000 0.6 OutOfMemoryError
 StrassenT_T_S 10000 0.7 OutOfMemoryError
 StrassenT_T_S 10000 0.8 OutOfMemoryError
-StrassenT_T_S 10000 0.9 OutOfMemoryErrorStrassenT_T 3000 2.6177228
+StrassenT_T_S 10000 0.9 OutOfMemoryErrorStrassenT_T 3000 2.6177228StrassenT_T_S 2000 0.0052483StrassenT_T_S 2000 0.0017853StrassenT_T_S 2000 0.0017864

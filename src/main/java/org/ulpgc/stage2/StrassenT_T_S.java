@@ -1,4 +1,4 @@
-package org.ulpgc;
+package org.ulpgc.stage2;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -174,7 +174,7 @@ public class StrassenT_T_S {
     }
 
     public static void main(String[] args) throws IOException {
-        double[] sizes = {10000};
+        double[] sizes = {2000};
         double[] sparcity_values = {0.7, 0.8, 0.9};
         StringBuilder results = new StringBuilder();
         StrassenT_T_S s = new StrassenT_T_S();
@@ -195,7 +195,7 @@ public class StrassenT_T_S {
             }
         }
 
-        saveResultsToFile(results.toString());
+        System.out.println(results);
     }
 
     private static void saveResultsToFile(String results) throws IOException {
